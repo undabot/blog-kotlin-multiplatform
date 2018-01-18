@@ -1,0 +1,3 @@
+interface CancellableJob {
+    fun cancel() {}
+}

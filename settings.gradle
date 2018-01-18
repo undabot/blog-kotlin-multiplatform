@@ -1,0 +1,12 @@
+rootProject.name = 'showcase'
+include 'common'
+
+if (INCLUDE_WEB) {
+    include 'common-js'
+    include 'web'
+}
+
+if (INCLUDE_ANDROID == "true") {
+    include 'common-jvm'
+    include 'android', 'android:app'
+}

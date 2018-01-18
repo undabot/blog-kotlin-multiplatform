@@ -1,0 +1,28 @@
+allprojects {
+    buildscript {
+        ext.kotlin_version = '1.2.10'
+        ext.serialization_version = '0.4'
+        ext.kotlinx_coroutine_version = '0.21'
+        ext.fuel_version = '1.12.0'
+
+        repositories {
+            maven { url 'http://dl.bintray.com/kotlin/kotlin-eap-1.2' }
+            maven { url "https://kotlin.bintray.com/kotlinx" }
+            maven { url 'https://maven.google.com' }
+            maven { url 'https://jitpack.io' }
+            jcenter()
+        }
+        dependencies {
+            classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+            classpath "org.jetbrains.kotlinx:kotlinx-gradle-serialization-plugin:$serialization_version"
+        }
+
+    }
+    repositories {
+        maven { url 'http://dl.bintray.com/kotlin/kotlin-eap-1.2' }
+        maven { url "https://kotlin.bintray.com/kotlinx" }
+        maven { url 'https://maven.google.com' }
+        maven { url 'https://jitpack.io' }
+        jcenter()
+    }
+}

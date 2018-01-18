@@ -1,0 +1,24 @@
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.google.com' }
+        jcenter()
+        maven { url "http://dl.bintray.com/kotlin/kotlin-eap-1.2" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://maven.google.com' }
+        jcenter()
+        maven { url "http://dl.bintray.com/kotlin/kotlin-eap-1.2" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
