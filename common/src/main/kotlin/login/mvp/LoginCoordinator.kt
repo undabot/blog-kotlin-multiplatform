@@ -23,5 +23,4 @@ class LoginCoordinator(view: LoginContract.View) : LoginContract.Coordinator {
         val user = User("", "", "")
         authorization.with(user, presenter)
     }
-
 }
